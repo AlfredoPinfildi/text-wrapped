@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.word .character-wrapper {
+    overflow: hidden;
+    position: relative;
+    font-family: "PT Serif";
+    font-size: 56px;
+    text-transform: uppercase;
+}
+
+.tr {
+    position: absolute;
+    transition: transform .8s;
+    transform: translateX(100%);
+}
+
+.word.entered .tr {
+    transform: translateX(0);
+}
+
+
+.word.exit .tr {
+    transform: translateX(-100%);
+}
+
+.ghost {
+    color: transparent;
+}
