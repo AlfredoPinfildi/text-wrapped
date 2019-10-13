@@ -1,7 +1,7 @@
 let words = [
-    "Angelo",
-    "Claudio",
-    "La Cinghia"
+    "Chi siamo",
+    "Prodotti",
+    "Contatti"
 ];
 
 document.addEventListener('DOMContentLoaded', function (event) {
